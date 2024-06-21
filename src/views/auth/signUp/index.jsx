@@ -25,7 +25,7 @@ import { FcGoogle } from "react-icons/fc";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
 
-function SignIn() {
+function SignUp() {
   // Chakra color mode
   const textColor = useColorModeValue("navy.700", "white");
   const textColorSecondary = "gray.400";
@@ -61,7 +61,7 @@ function SignIn() {
       >
         <Box me="auto">
           <Heading color={textColor} fontSize="36px" mb="10px">
-            Sign in to your account
+            Create an account
           </Heading>
           <Text
             mb="36px"
@@ -70,7 +70,7 @@ function SignIn() {
             fontWeight="400"
             fontSize="md"
           >
-            Enter your email and password to sign in!
+            Welcome! Please enter your details.
           </Text>
         </Box>
         <Flex
@@ -99,7 +99,7 @@ function SignIn() {
             _focus={googleActive}
           >
             <Icon as={FcGoogle} w="20px" h="20px" me="10px" />
-            Sign in with Google
+            Sign up with Google
           </Button>
           <Flex align="center" mb="25px">
             <HSeparator />
@@ -109,6 +109,27 @@ function SignIn() {
             <HSeparator />
           </Flex>
           <FormControl>
+            <FormLabel
+              display="flex"
+              ms="4px"
+              fontSize="sm"
+              fontWeight="500"
+              color={textColor}
+              mb="8px"
+            >
+              Name<Text color={brandStars}>*</Text>
+            </FormLabel>
+            <Input
+              isRequired={true}
+              variant="auth"
+              fontSize="sm"
+              ms={{ base: "0px", md: "0px" }}
+              type="email"
+              placeholder="Ex: Nguyen Van An"
+              mb="24px"
+              fontWeight="500"
+              size="lg"
+            />
             <FormLabel
               display="flex"
               ms="4px"
@@ -158,34 +179,7 @@ function SignIn() {
                 />
               </InputRightElement>
             </InputGroup>
-            <Flex justifyContent="space-between" align="center" mb="24px">
-              <FormControl display="flex" alignItems="center">
-                <Checkbox
-                  id="remember-login"
-                  colorScheme="brandScheme"
-                  me="10px"
-                />
-                <FormLabel
-                  htmlFor="remember-login"
-                  mb="0"
-                  fontWeight="normal"
-                  color={textColor}
-                  fontSize="sm"
-                >
-                  Keep me logged in
-                </FormLabel>
-              </FormControl>
-              <NavLink to="/auth/forgot-password">
-                <Text
-                  color={textColorBrand}
-                  fontSize="sm"
-                  w="124px"
-                  fontWeight="500"
-                >
-                  Forgot password?
-                </Text>
-              </NavLink>
-            </Flex>
+            
             <Button
               fontSize="sm"
               variant="brand"
@@ -194,7 +188,7 @@ function SignIn() {
               h="50"
               mb="24px"
             >
-              Sign In
+              Sign Up
             </Button>
           </FormControl>
           <Flex
@@ -205,15 +199,15 @@ function SignIn() {
             mt="0px"
           >
             <Text color={textColorDetails} fontWeight="400" fontSize="14px">
-              Not registered yet?
-              <NavLink to="/auth/sign-up">
+              Already have an account?
+              <NavLink to="/auth/sign-in">
                 <Text
                   color={textColorBrand}
                   as="span"
                   ms="5px"
                   fontWeight="500"
                 >
-                  Create an Account
+                  Login
                 </Text>
               </NavLink>
             </Text>
@@ -224,4 +218,4 @@ function SignIn() {
   );
 }
 
-export default SignIn;
+export default SignUp;

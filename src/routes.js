@@ -16,7 +16,6 @@ import {
   MdMap,
   MdMapsUgc,
   MdSupport,
-  
 } from "react-icons/md";
 
 // Admin Imports
@@ -37,6 +36,7 @@ import DataTables from "views/admin/dataTables";
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
 import DataTraffic from "views/admin/dataTraffic";
+import SignUp from "views/auth/signUp";
 
 const routes = [
   {
@@ -60,13 +60,23 @@ const routes = [
     ),
     component: NFTMarketplace,
     secondary: true,
-  },
-  {
-    name: "Signal Quality",
-    layout: "/admin",
-    icon: <Icon as={MdSignalCellular0Bar} width="20px" height="20px" color="inherit" />,
-    path: "/signal-quality",
-    component: SignalQuality,
+
+    child: [
+      {
+        name: "Signal Quality",
+        layout: "/admin",
+        icon: (
+          <Icon
+            as={MdSignalCellular0Bar}
+            width="20px"
+            height="20px"
+            color="inherit"
+          />
+        ),
+        path: "/signal-quality",
+        component: SignalQuality,
+      },
+    ],
   },
   {
     name: "Data Tables",
@@ -79,7 +89,9 @@ const routes = [
     name: "Phone calls",
     layout: "/admin",
     path: "/phone-call",
-    icon: <Icon as={MdPermPhoneMsg} width="20px" height="20px" color="inherit" />,
+    icon: (
+      <Icon as={MdPermPhoneMsg} width="20px" height="20px" color="inherit" />
+    ),
     component: PhoneCall,
   },
   {
@@ -107,7 +119,9 @@ const routes = [
     name: "Mass Export",
     layout: "/admin",
     path: "/mass-export",
-    icon: <Icon as={MdArrowCircleDown} width="20px" height="20px" color="inherit" />,
+    icon: (
+      <Icon as={MdArrowCircleDown} width="20px" height="20px" color="inherit" />
+    ),
     component: MassExport,
   },
   {
@@ -151,6 +165,13 @@ const routes = [
     path: "/support",
     icon: <Icon as={MdSupport} width="20px" height="20px" color="inherit" />,
     component: Support,
+  },
+  {
+    name: "Sign Up",
+    layout: "/auth",
+    path: "/sign-up",
+    icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
+    component: SignUp,
   },
 ];
 
