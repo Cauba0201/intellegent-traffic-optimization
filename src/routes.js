@@ -6,18 +6,37 @@ import {
   MdPerson,
   MdHome,
   MdLock,
-  MdOutlineShoppingCart,
+  MdSignalCellular0Bar,
+  MdPermPhoneMsg,
+  MdPunchClock,
+  Md1KPlus,
+  MdArrowCircleDown,
+  MdMicrowave,
+  MdPeopleAlt,
+  MdMap,
+  MdMapsUgc,
+  MdSupport,
+  
 } from "react-icons/md";
 
 // Admin Imports
 import MainDashboard from "views/admin/default";
 import NFTMarketplace from "views/admin/marketplace";
 import Profile from "views/admin/profile";
+import PhoneCall from "views/admin/phoneCall";
+import Sample from "views/admin/sample";
+import Support from "views/admin/support";
+import ThroughtInput from "views/admin/throughtPut";
+import MassExport from "views/admin/massExport";
+import IntellegentMap from "views/admin/intellegentmaps";
+import MapView from "views/admin/mapView";
+import Latency from "views/admin/latency";
+import SignalQuality from "views/admin/signalQuality";
 import DataTables from "views/admin/dataTables";
-import RTL from "views/admin/rtl";
 
 // Auth Imports
 import SignInCentered from "views/auth/signIn";
+import DataTraffic from "views/admin/dataTraffic";
 
 const routes = [
   {
@@ -33,7 +52,7 @@ const routes = [
     path: "/nft-marketplace",
     icon: (
       <Icon
-        as={MdOutlineShoppingCart}
+        as={MdSignalCellular0Bar}
         width="20px"
         height="20px"
         color="inherit"
@@ -45,9 +64,9 @@ const routes = [
   {
     name: "Signal Quality",
     layout: "/admin",
-    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
-    path: "/data-tables",
-    component: DataTables,
+    icon: <Icon as={MdSignalCellular0Bar} width="20px" height="20px" color="inherit" />,
+    path: "/signal-quality",
+    component: SignalQuality,
   },
   {
     name: "Data Tables",
@@ -59,44 +78,44 @@ const routes = [
   {
     name: "Phone calls",
     layout: "/admin",
-    path: "/profile",
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    path: "/phone-call",
+    icon: <Icon as={MdPermPhoneMsg} width="20px" height="20px" color="inherit" />,
+    component: PhoneCall,
   },
   {
     name: "Data traffic",
     layout: "/admin",
-    path: "/profile",
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    path: "/data-traffic",
+    icon: <Icon as={Md1KPlus} width="20px" height="20px" color="inherit" />,
+    component: DataTraffic,
   },
   {
     name: "Latency",
     layout: "/admin",
-    path: "/profile",
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    path: "/latency",
+    icon: <Icon as={MdPunchClock} width="20px" height="20px" color="inherit" />,
+    component: Latency,
   },
   {
     name: "Throughtput",
     layout: "/admin",
-    path: "/profile",
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    path: "/throught-put",
+    icon: <Icon as={MdMicrowave} width="20px" height="20px" color="inherit" />,
+    component: ThroughtInput,
   },
   {
-    name: "Mass export",
+    name: "Mass Export",
     layout: "/admin",
-    path: "/profile",
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    path: "/mass-export",
+    icon: <Icon as={MdArrowCircleDown} width="20px" height="20px" color="inherit" />,
+    component: MassExport,
   },
   {
     name: "Sample",
     layout: "/admin",
-    path: "/profile",
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: Profile,
+    path: "/sample",
+    icon: <Icon as={MdPeopleAlt} width="20px" height="20px" color="inherit" />,
+    component: Sample,
   },
   {
     name: "Profile",
@@ -114,24 +133,24 @@ const routes = [
   },
   {
     name: "Map View",
-    layout: "/rtl",
-    path: "/rtl-default",
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
-    component: RTL,
+    layout: "/admin",
+    path: "/map-view",
+    icon: <Icon as={MdMap} width="20px" height="20px" color="inherit" />,
+    component: MapView,
   },
   {
-    name: "Intellegent maps",
-    layout: "/rtl",
-    path: "/rtl-default",
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
-    component: RTL,
+    name: "Intellegent Maps",
+    layout: "/admin",
+    path: "/intellegent-map",
+    icon: <Icon as={MdMapsUgc} width="20px" height="20px" color="inherit" />,
+    component: IntellegentMap,
   },
   {
     name: "Support",
-    layout: "/rtl",
-    path: "/rtl-default",
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
-    component: RTL,
+    layout: "/admin",
+    path: "/support",
+    icon: <Icon as={MdSupport} width="20px" height="20px" color="inherit" />,
+    component: Support,
   },
 ];
 
