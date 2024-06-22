@@ -1,7 +1,7 @@
 import { mode } from "@chakra-ui/theme-tools";
 export const globalStyles = {
   colors: {
-    brand: {
+    brand: { // icon nhỏ góc phải biểu dồ
       100: "#E9E3FF",
       200: "#422AFB",
       300: "#422AFB",
@@ -12,7 +12,7 @@ export const globalStyles = {
       800: "#190793",
       900: "#11047A",
     },
-    brandScheme: {
+    brandScheme: { // tích và biểu đồ load tăng
       100: "#E9E3FF",
       200: "#7551FF",
       300: "#7551FF",
@@ -34,7 +34,7 @@ export const globalStyles = {
       800: "#190793",
       900: "#02044A",
     },
-    secondaryGray: {
+    secondaryGray: { // màu backgroud
       100: "#E0E5F2",
       200: "#E1E9F8",
       300: "#F4F7FE",
@@ -63,6 +63,18 @@ export const globalStyles = {
       500: "#01B574",
     },
     navy: {
+      50: "#d0dcfb",
+      100: "#aac0fe",
+      200: "#a3b9f8",
+      300: "#728fea",
+      400: "#3652ba",
+      500: "#1b3bbb",
+      600: "#24388a",
+      700: "#1B254B",
+      800: "#111c44",
+      900: "#0b1437",
+    },
+    darkMode: {
       50: "#d0dcfb",
       100: "#aac0fe",
       200: "#a3b9f8",

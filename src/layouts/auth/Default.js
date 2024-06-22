@@ -69,7 +69,7 @@ function AuthIllustration(props) {
             justify="center"
             align="end"
             w="100%"
-            h="100%"
+            h="90%"
             bgSize="cover"
             bgPosition="50%"
             position="absolute"

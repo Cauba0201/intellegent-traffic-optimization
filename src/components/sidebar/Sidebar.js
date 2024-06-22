@@ -1,6 +1,5 @@
 import React from "react";
 
-// chakra imports
 import {
   Box,
   Flex,
@@ -33,7 +32,6 @@ function Sidebar(props) {
     "14px 17px 40px 4px rgba(112, 144, 176, 0.08)",
     "unset"
   );
-  // Chakra Color Mode
   let sidebarBg = useColorModeValue("white", "navy.800");
   let sidebarMargins = "0px";
 
@@ -70,7 +68,6 @@ export function SidebarResponsive(props) {
   const btnRef = React.useRef();
 
   const { routes } = props;
-  // let isWindows = navigator.platform.startsWith("Win");
   //  BRAND
 
   return (

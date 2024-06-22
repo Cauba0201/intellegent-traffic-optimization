@@ -1,10 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// Chakra imports
 import {
   Box,
   Button,
-  Checkbox,
   Flex,
   FormControl,
   FormLabel,
@@ -26,7 +24,6 @@ import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
 
 function SignUp() {
-  // Chakra color mode
   const textColor = useColorModeValue("navy.700", "white");
   const textColorSecondary = "gray.400";
   const textColorDetails = useColorModeValue("navy.700", "secondaryGray.600");
@@ -179,7 +176,7 @@ function SignUp() {
                 />
               </InputRightElement>
             </InputGroup>
-            
+
             <Button
               fontSize="sm"
               variant="brand"
