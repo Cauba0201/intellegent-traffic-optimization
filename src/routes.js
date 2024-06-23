@@ -49,7 +49,7 @@ const routes = [
   {
     name: "Signal & Quality",
     layout: "/admin",
-    path: "/nft-marketplace",
+    path: "/signal-&-quality",
     icon: (
       <Icon
         as={MdSignalCellular0Bar}

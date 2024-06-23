@@ -37,7 +37,6 @@ export default function Footer() {
         }}
         mb={{ base: "20px", xl: "0px" }}
       >
-        {" "}
         &copy; {1900 + new Date().getYear()}
         <Text as="span" fontWeight="500" ms="4px">
           Design by
